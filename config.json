@@ -1,0 +1,50 @@
+{
+  "target": {
+    "name": "PS4 Pro",
+    "firmware": "13.02",
+    "ip": "192.168.1.100",
+    "user_id": "10000000",
+    "timeout_sec": 8.0
+  },
+  "ports": {
+    "ps4debug": 744,
+    "ftp": 2121,
+    "binloader": 9090,
+    "rpi": 12800,
+    "klog": 3232,
+    "local_http_pkg_server": 8899,
+    "local_exploit_host": 8088
+  },
+  "ftp_auth": {
+    "username": "anonymous",
+    "password": ""
+  },
+  "kernel_offsets": {
+    "firmware_tag": "13.02",
+    "kernel_base_override": null,
+    "allproc_offset": null,
+    "prison0_offset": null,
+    "rootvnode_offset": null,
+    "sysent_offset": null,
+    "qa_flags_offset": null
+  },
+  "auto_watcher": {
+    "enabled": false,
+    "poll_interval_sec": 4.0,
+    "startup_payloads": []
+  },
+  "external_tools": {
+    "ffmpeg": "ffmpeg",
+    "at9tool": null,
+    "vgaudio_cli": null,
+    "orbis_pub_cmd": null,
+    "ghidra_headless": null
+  },
+  "paths": {
+    "dumps_dir": "dumps",
+    "backups_dir": "backups",
+    "themes_dir": "themes",
+    "patches_dir": "patches",
+    "exploit_files_dir": "exploit_files"
+  }
+}
